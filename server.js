@@ -10,15 +10,15 @@ const app = express()
 app.all('*', (_, res) => res.send('Work in progress'))
 
 // activate helmet--server security
-// app.use(
-//   helmet({
-//     contentSecurityPolicy: false
-//   })
-// )
-// app.set('x-powered-by', false)
+app.use(
+  helmet({
+    contentSecurityPolicy: false
+  })
+)
+app.set('x-powered-by', false)
 
-// routes(app)
-// loadFrontend(app)
+routes(app)
+loadFrontend(app)
 
 app.listen(PORT, () => {
   console.log(
