@@ -7,8 +7,6 @@ const PORT = process.env.PORT || 3000
 
 const app = express()
 
-app.all('*', (_, res) => res.send('Work in progress'))
-
 // activate helmet--server security
 app.use(
   helmet({

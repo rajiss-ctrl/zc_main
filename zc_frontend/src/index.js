@@ -8,3 +8,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('zc-root')
 )
+console.log('This should be live')
